@@ -2,7 +2,7 @@
 
 Methods are identical to the STL map container, except that the tree is not height-balanced. Original red-black model is not implemented. 
 
-*Map Member type*
+### Map Member type
 
 This table contains in-class type overrides (typical for the standard STL library) that are adopted to make class code easy to understand:
 
@@ -17,7 +17,7 @@ This table contains in-class type overrides (typical for the standard STL librar
 | `const_iterator`         | internal class `MapConstIterator<K, T>` or `BinaryTree::const_iterator` as internal const iterator of tree subclass; defines the constant type for iterating through the container                                           |
 | `size_type`              | `size_t` defines the type of the container size (standard type is size_t) |
 
-*Map Member functions*
+### Map Member functions
 
 This table contains the main public methods for interacting with the class:
 
@@ -30,7 +30,7 @@ This table contains the main public methods for interacting with the class:
 | `~map()`  | destructor  |
 | `operator=(map &&m)`      | assignment operator overload for moving an object                                |
 
-*Map Element access*
+### Map Element access
 
 This table contains the public methods for accessing the elements of the class:
 
@@ -39,7 +39,7 @@ This table contains the public methods for accessing the elements of the class:
 | `T& at(const Key& key)`                     | access a specified element with bounds checking                                          |
 | `T& operator[](const Key& key)`             | access or insert specified element                                                     |
 
-*Map Iterators*
+### Map Iterators
 
 This table contains the public methods for iterating over class elements (access to iterators):
 
@@ -48,7 +48,7 @@ This table contains the public methods for iterating over class elements (access
 | `iterator begin()`            | returns an iterator to the beginning                                                   |
 | `iterator end()`                | returns an iterator to the end                                                         |
 
-*Map Capacity*
+### Map Capacity
 
 This table contains the public methods for accessing the container capacity information:
 
@@ -58,7 +58,7 @@ This table contains the public methods for accessing the container capacity info
 | `size_type size()`                   | returns the number of elements                                                         |
 | `size_type max_size()`               | returns the maximum possible number of elements                                        |
 
-*Map Modifiers*
+### Map Modifiers
 
 This table contains the public methods for modifying a container:
 
@@ -72,7 +72,7 @@ This table contains the public methods for modifying a container:
 | `void swap(map& other)`                   | swaps the contents                                                                     |
 | `void merge(map& other);`                  | splices nodes from another container                                                   |
 
-*Map Lookup*
+### Map Lookup
 
 This table contains the public methods for viewing the container:
 
