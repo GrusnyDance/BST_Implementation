@@ -1,4 +1,6 @@
+# C++ Binary search tree implementation
 
+Methods are identical to the STL map container, except that the tree is not height-balanced. Original red-black model is not implemented. 
 
 *Map Member type*
 
